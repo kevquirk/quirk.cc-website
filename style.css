@@ -1,0 +1,66 @@
+/* Global variables for changing colours across the site */
+:root {
+    --bg-color: #f0dfb4;
+    --accent-color: #346272;
+    --light-color: #d5c395;
+}
+
+/* Make the website responsive */
+@media screen and (max-width: 100%) {
+  .main {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ul.nav li {float: none;}
+}
+
+.main {
+  float: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 4em;
+  border-left: 4px solid var(--accent-color);
+
+}
+
+.footer {
+	float: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 4em;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Format the main body of the website */
+body {
+	background: var(--bg-color);
+	color: var(--accent-color);
+	line-height: 1.5;
+	font-family: "merriweather";
+}
+
+/* Typography */
+p {
+margin: 1em;
+font-size: 1.1em;
+}
+
+.faint {
+	color: var(--light-color);
+}
+
+/* Format Hyperlinks */
+
+a, a:visited, a:active {
+	text-decoration: underline;
+	color: var(--accent-color);
+}
+
+a:hover {
+	text-decoration: none;
+}
